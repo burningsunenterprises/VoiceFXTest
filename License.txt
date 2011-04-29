@@ -5,7 +5,7 @@
  * 
  *  Use is subject to license terms.
  * 
- *  This file is available and licensed under the following license:
+ *  The VoiceFX Framework is available and licensed under the following license:
  * 
  *  Redistribution and use in source binary forms, without modification,
  *  is permitted provided that the following conditions are met:
@@ -34,53 +34,3 @@
  *  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.bse.voicefx;
-
-import javafx.stage.Stage;
-import javafx.scene.Scene;
-import javafx.scene.text.Text;
-import javafx.scene.text.Font;
-import javafx.async.RunnableFuture;
-
-/**
- * @author Eric M. Smith   Burning Sun Enterprises
- */
-
-var textContents: String;
-
-var contentText: Text = Text {
-  font: Font {
-    size: 16
-  }
-  x: 10
-  y: 30
-  content: bind textContents
-};
-
-
-Stage {
-    title: "Application title"
-    scene: Scene {
-        width: 250
-        height: 80
-        content: [
-          contentText
-        ]
-    }
-}
-
-function replaceText(token: String, grammar:String): Void {
-  textContents = token;
-}
-
-
-function createListener(): RunnableFuture {
-  new VoiceFXSphinx4Impl( voicefx, "voicefx.testconfig.xml" );
-}
-
-var voicefx: VoiceFX = VoiceFX {
-  createListener: createListener
-  onReceive: replaceText
-}
-
-voicefx.start();

@@ -1,0 +1,30 @@
+VoiceFXTest -- A Test application for the VoiceFX Framework
+========================================================================================
+DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER
+Copyright 2008-2011 Burning Sun Enterprises.
+All Rights Reserved.
+
+See License.txt for usage conditions.
+========================================================================================
+
+Originally presented at JavaOne 2011, the VoiceFX framework has been open-sourced to the
+public for use within their JavaFX Script and Visage applications.
+
+(From VoiceFX README)
+
+To see how to use the framework, download the test and example programs:
+
+VoiceFX-Test
+VoiceFX-Calculator
+VoiceFX-Synthesizer.
+
+========================================================================================
+Pre-Requisites
+========================================================================================
+
+The VoiceFX framework was originally presented using the Sphinx-4 library for speech
+recognition; however, we have tested using the JSAPI2 libraries from Conversay.
+
+You will need to have the libraries installed and available on your machine for VoiceFX
+to work properly.
+

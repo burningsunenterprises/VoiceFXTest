@@ -1,6 +1,6 @@
 /*
  *  DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER
- *  Copyright 2008-2010 Burning Sun Enterprises.
+ *  Copyright 2008-2011 Burning Sun Enterprises.
  *  All Rights Reserved.
  * 
  *  Use is subject to license terms.
@@ -52,7 +52,7 @@ import javax.speech.recognition.RuleParse;
 
 /**
  *
- * @author e033510
+ * @author Eric M. Smith   Burning Sun Enterprises
  */
 public class VoiceFXSphinx4Impl extends VoiceFXImpl {
 
